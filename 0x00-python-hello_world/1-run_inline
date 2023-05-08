@@ -1,4 +1,4 @@
 #!/bin/bash
 TEMP_FILE=$(mktemp)
 echo "$PYCODE" > "TEMP_FILE"
-python3  $TEMP_FILE
+python3  "$TEMP_FILE"
