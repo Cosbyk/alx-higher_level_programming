@@ -2,6 +2,8 @@
 
 def add_tuple(tuple_a=(), tuple_b=()):
     '''a function that adds 2 tuples'''
-    a1, a2 = tuple_a[:2] + (0, 0)[:2 - len(tuple_a)]
-    b1, b2 = tuple_b[:2] + (0, 0)[:2 - len(tuple_b)]
-    return (a1 + b1, a2 + b2)
+    tuple_3 = ()
+    tuple_1 = tuple_a + (0, 0)
+    tuple_2 = tuple_b + (0, 0)
+    tuple_3 = tuple_1[0] + tuple_2[0], tuple_1[1] + tuple_2[1]
+    return tuple_3
