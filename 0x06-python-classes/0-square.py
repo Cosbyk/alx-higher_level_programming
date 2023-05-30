@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
-'''an empty class Square that defines a square'''
+'''Class implementation for squares'''
 class Square:
+    '''Define a class for squares and 
+    their related operations'''
     pass
