@@ -1,12 +1,12 @@
 1-my_list.py test file.
 ----------------------------------------------------
 
-Test 0: import:
+case 0: import:
 >>> MyList = __import__('1-my_list').MyList
 >>>
 ----------------------------------------------------
 
-Test 1: test for common case(self):
+case 1: test for common case
 
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -14,13 +14,16 @@ Test 1: test for common case(self):
 >>> my_list.append(2)
 >>> my_list.append(3)
 >>> my_list.append(5)
->>> print(my_list), [1, 4, 2, 3, 5]
->>> my_list.print_sorted(), [1, 2, 3, 4, 5]
->>> print(my_list), [1, 4, 2, 3, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 >>>
 ----------------------------------------------------
 
-Test 2: test for passed list(self):
+case 2: test for passed list
 
 >>> a = [1, 7, 2, 4]
 >>> my_list = MyList(a)
@@ -29,34 +32,38 @@ Test 2: test for passed list(self):
 >>>
 ----------------------------------------------------
 
-Test 3: test for the same number(self):
+case 3: test for the same number
 
 >>> my_list2 = MyList()
 >>> my_list2.append(2)
 >>> my_list2.append(2)
 >>> my_list2.append(2)
->>> my_list2.print_sorted(), [2, 2, 2, 2]
+>>> my_list2.print_sorted()
+[2, 2, 2, 2]
 >>>
 ----------------------------------------------------
 
-Test 4: test for unique numbers(self):
+case 4: test for unique numbers
 
 >>> my_list = MyList()
 >>> my_list.append(4)
->>> my_list.print_sorted(), [4]
->>> print(my_list), [4]
+>>> my_list.print_sorted()
+[4]
+>>> print(my_list)
+[4]
 >>>
 ----------------------------------------------------
 
-Test 5: test for empty list(self):
+case 5: test for empty list
 
 >>> a = []
 >>> my_list = MyList(a) 
->>> my_list.print_sorted(), []
+>>> my_list.print_sorted()
+[]
 >>>
 ----------------------------------------------------
 
-Test 6: test for negative numbers(self):
+case 6: test for negative numbers
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
@@ -66,18 +73,19 @@ Test 6: test for negative numbers(self):
 >>> my_list.append(-1)
 >>> my_list.append(-6)
 >>> my_list.append(-3)
->>> my_list.print_sorted(), [-6, -3, -1, 1, 3, 6]
+>>> my_list.print_sorted()
+[-6, -3, -1, 1, 3, 6]
 >>>
 ----------------------------------------------------
 
-Test 7: test for base class(self):
+case 7: test for base class
 
 >>> my_list = [1, 2, 3]
 >>> my_list.print_sorted()
 >>>
 ----------------------------------------------------
 
-Test 8: test for object not defined(self):
+case 8: test for object not defined
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list2.print_sorted()
