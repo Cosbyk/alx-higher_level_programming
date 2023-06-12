@@ -9,10 +9,12 @@ class Rectangle(BaseGeometry):
     '''
     The class represents  rectangle with BaseGeometry
     '''
+
     def __init__(self, width, height):
         '''
         Construct new rectangle
         '''
+
         super().integer_validator("width", width)
         self.__width = width
         super().integer_validator("height", height)
